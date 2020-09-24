@@ -1,4 +1,4 @@
-FROM debian:10 AS builder
+FROM debian:buster
 
 # gcc for cgo
 RUN sed -i 's%http://repo/%http://repo.dev.dszn.cz/%' /etc/apt/sources.list \
